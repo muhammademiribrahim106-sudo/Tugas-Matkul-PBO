@@ -1,0 +1,28 @@
+package TugasEmirMatkulPBO;
+
+import matkulpbo.BangunDatar;
+
+public class Lingkaran extends BangunDatar {
+
+    private float jari;
+    private final float phi = 3.14f;
+
+    public void setJari(float jari) {
+        this.jari = jari;
+    }
+
+    public float getJari() {
+        return jari;
+    }
+
+    //Override
+    protected float luas() {
+        return phi * jari * jari;
+    }
+
+    //Override
+    protected float keliling() {
+        return 2 * phi * jari;
+    }
+}
+S

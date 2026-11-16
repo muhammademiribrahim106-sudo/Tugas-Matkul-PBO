@@ -1,0 +1,50 @@
+
+package TugasEmirMatkulPBO;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Persegi persegi = new Persegi();
+        Lingkaran lingkaran = new Lingkaran();
+        PersegiPanjang pp = new PersegiPanjang();
+        Segitiga segitiga = new Segitiga();
+
+        persegi.setSisi(5);
+
+        lingkaran.setJari(7);
+
+        pp.setPanjang(10);
+        pp.setLebar(5);
+
+        segitiga.setAlas(6);
+        segitiga.setTinggi(4);
+        segitiga.setSisiKiri(5);
+        segitiga.setSisiKanan(5);
+
+        System.out.println("    PERHITUNGAN BANGUN DATAR");
+        System.out.println("================================");
+
+        System.out.println("\n--- PERSEGI ---");
+        System.out.println("Sisi     : " + persegi.getSisi());
+        System.out.println("Luas     : " + persegi.getLuas());
+        System.out.println("Keliling : " + persegi.getKeliling());
+
+        System.out.println("\n--- LINGKARAN ---");
+        System.out.println("Jari-jari: " + lingkaran.getJari());
+        System.out.println("Luas     : " + lingkaran.getLuas());
+        System.out.println("Keliling : " + lingkaran.getKeliling());
+
+        System.out.println("\n--- PERSEGI PANJANG ---");
+        System.out.println("Panjang  : " + pp.getPanjang());
+        System.out.println("Lebar    : " + pp.getLebar());
+        System.out.println("Luas     : " + pp.getLuas());
+        System.out.println("Keliling : " + pp.getKeliling());
+
+        System.out.println("\n--- SEGITIGA ---");
+        System.out.println("Alas     : " + segitiga.getAlas());
+        System.out.println("Tinggi   : " + segitiga.getTinggi());
+        System.out.println("Luas     : " + segitiga.getLuas());
+        System.out.println("Keliling : " + segitiga.getKeliling());
+    }
+}

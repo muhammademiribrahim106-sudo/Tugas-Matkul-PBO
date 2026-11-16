@@ -1,0 +1,50 @@
+package TugasEmirMatkulPBO;
+
+
+public class Segitiga {
+    private double alas;
+    private double tinggi;
+    private double sisiKiri;
+    private double sisiKanan;
+
+    public void setAlas(double alas) {
+        this.alas = alas;
+    }
+
+    public double getAlas() {
+        return alas;
+    }
+
+    public void setTinggi(double tinggi) {
+        this.tinggi = tinggi;
+    }
+
+    public double getTinggi() {
+        return tinggi;
+    }
+
+    public void setSisiKiri(double sisiKiri) {
+        this.sisiKiri = sisiKiri;
+    }
+
+    public double getSisiKiri() {
+        return sisiKiri;
+    }
+
+    public void setSisiKanan(double sisiKanan) {
+        this.sisiKanan = sisiKanan;
+    }
+
+    public double getSisiKanan() {
+        return sisiKanan;
+    }
+
+    public double getLuas() {
+        return 0.5 * alas * tinggi;
+    }
+
+    public double getKeliling() {
+        // Keliling segitiga = Alas + Sisi Kiri + Sisi Kanan
+        return alas + sisiKiri + sisiKanan;
+    }
+}
